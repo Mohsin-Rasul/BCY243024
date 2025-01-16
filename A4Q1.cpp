@@ -9,9 +9,9 @@ struct Student {
 };
 
 int main() {
-    Student students[2];
+    Student students[5];
 
-    for (int i = 0; i < 2; ++i) {
+    for (int i = 0; i < 5; i++) {
         cout << "Enter details for student " << i + 1 << ":" << endl;
         cout << "Name: ";
         cin.ignore();  
@@ -24,7 +24,7 @@ int main() {
     }
 
     cout << "Student Details:" << endl;
-    for (int i = 0; i < 2; ++i) {
+    for (int i = 0; i < 5; i++) {
         cout << "Student " << i + 1 << ":" << endl;
         cout << "Name: " << students[i].name << endl;
         cout << "Roll Number: " << students[i].rollNumber << endl;
